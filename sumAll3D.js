@@ -12,4 +12,13 @@ let tab = [
   [[0]],
   [[0], [1], [2], [1]],
 ]
-// a faire
+
+let sum = 0
+for (let i = 0; i < tab.length; ++i) {
+  for (let j = 0; j < tab[i].length; ++j) {
+    for (let k = 0; k < tab[i][j].length; ++k) {
+      sum += tab[i][j][k]
+    }
+  }
+}
+console.log(`sum = ${sum}`)
