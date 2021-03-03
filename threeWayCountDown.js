@@ -1,20 +1,27 @@
+let min = 1
+let max = 101
+let step = 2
+
+
+
+
 /*
-for (let i = 101; i >= 1; i -= 2) {
+for (let i = max; i >= min; i -= step) {
   console.log(i);
 }
 */
 
 /*
-let i = 101;
-while (i > 1) {
+let i = max;
+while (i > min) {
   console.log(i)
-  i -= 2
+  i -= step
 }
 */
 
 
-let i = 101;
+let i = max;
 do {
   console.log(i)
-  i -= 2
-} while (i > 1)
+  i -= step
+} while (i >= min)
